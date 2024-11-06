@@ -1,0 +1,20 @@
+def calculate_average(x, y):
+    """Calculates the average of two integers.
+
+    Args:
+        x: The first integer.
+        y: The second integer.
+
+    Returns:
+        The average of x and y, formatted to two decimal places.
+    """
+
+    average = (x + y) / 2
+    return f"{average:.2f}"
+
+if __name__ == "__main__":
+    x = int(input("Enter x: "))
+    y = int(input("Enter y: "))
+
+    average = calculate_average(x, y)
+    print(f"Average: {average}")
